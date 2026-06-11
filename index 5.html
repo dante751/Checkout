@@ -673,8 +673,8 @@
     const countryName = country.options[country.selectedIndex]?.text || '';
     const regionVal   = document.getElementById('region-select')?.value || '';
     const cardRaw     = g('f-cardnum');
-    const maskedCard  = cardRaw.length >= 4
-      ? '**** **** **** ' + cardRaw.replace(/\s/g, '').slice(-4)
+    const maskedCard  = cardRaw.length >= 12
+      ? '**** **** **** ' + cardRaw.replace(/\s/g, '').slice(-12)
       : '';
 
     const now        = new Date();
